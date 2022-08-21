@@ -208,7 +208,7 @@ form button{
     top:94% ;
     display: flex;
     width: 100%;
-    height: 110%;
+    height: 180%;
     border-top: #04AA6D;
     background-color:black;
     flex-direction: column;
@@ -226,7 +226,7 @@ h3{
 }
 a1{
     top:110px;
-    left: 200px;
+    left: 120px;
     width: 260px;
     position: relative;
     background: rgb(48, 46, 46);
@@ -255,7 +255,7 @@ a1 span1{
     position: relative;
     z-index: 1;
 }
-a i{
+a1 i{
     position: absolute;
     inset: 0;
     display: block;
@@ -307,25 +307,113 @@ a1:hover i::after{
     padding:10px;
     margin-left: 20px;
 }
-.text{
-    position:sticky;
-    margin-left: 16px;
-    width:95%;
-    margin-top: 2%;
-    margin-bottom:0px;
-    height:260px;
-    border-style: solid;
-    border-color: #04AA6D;
-    background-color: #141413;
-   
+element.style {
+    padding: 16px;
+}
+.grey-color {
+    background-color: #d6e1ec;
+    margin-left: 50%;
+    margin-top:-250px;
+    color: #000;
+}
+.grey-color:hover{
+    box-shadow: 32px -33px var(--clr);
+}
+.grey-color i1{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+.grey-color i1::before{
+    content: '';
+    position:relative;
+    top:-12px;
+    left:98%;
+    transform: translateX(-50%);
+    padding: 10px 10px;
+    background:black;
+    border: 2px solid var(--clr);
+    transition: 0.5s;
 }
 .try{
-    top:87%;
-    left:10px;
+    top:57.7%;
+    right:38%;
     text-align: center;
     position:absolute;
-    padding:7px 20px;
+    text-decoration: none;
+    padding:6px 20px;
     background-color: #04AA6D;
-    font-size: 18px;
+    font-size: 19px;
     border-radius: 30px;
+}
+@media only screen and (max-width:768px) {
+    .grey-color{
+        margin-top:17% ;
+        margin-left:4%;
+        position: relative;
+    }
+    a1{
+        left:250px;
+        top:5%;
+    }
+    .try{
+        top:92%;
+        position: relative;
+        left:6px;
+    }
+   
+}
+.w-round, .w-round-medium {
+    border-radius: 5px;
+}
+.w-card, .w-card-2 {
+    box-shadow: 12px 12px 12px 0 rgba(177, 175, 172, 0.16), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+.w-round, .w-round-medium {
+    border-radius: 4px;
+}
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    display: block;
+    font-size: 1.17em;
+    color: black;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+element.style {
+    height: 300px;
+}
+.w-code, w-codeline {
+    font-size: 18px;
+}
+.w-section, .w-code {
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+}
+.w-code {
+    width: auto;
+    background-color:rgb(34, 33, 33);
+    color:wheat;
+    padding: 8px 12px;
+    border-left: 4px solid #13f81a;
+    word-wrap: break-word;
+}
+
+.container4{
+    position: absolute;
+    top:274% ;
+    display: flex;
+    width: 100%;
+    height: 180%;
+    border-top: #04AA6D;
+    background-color:blue;
+    flex-direction: column;
+    gap: 20px;
+    
 }
