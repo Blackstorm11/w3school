@@ -1,2 +1,1 @@
-# w3school
-omkar
+# w3schools-clone
